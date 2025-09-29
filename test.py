@@ -175,3 +175,11 @@ Compound Interest (Yearly + Quarterly compounding).
 Parameterized testing for multiple years.
  
 Edge cases (zero years, zero balance).
+
+
+                   Perform the following sequence in a test:
+Alice deposits 2000.
+Alice withdraws 500.
+Alice transfers 1000 to Bob.
+Write assertions for final balances of both accounts.
+Add an extra check that Alice’s total debits = 1500 and credits = 2000.
