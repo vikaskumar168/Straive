@@ -108,4 +108,14 @@ def test_add(calc):
     assert calc.add(0, 5) == 15
     assert calc.add(-1, -1) == -2
     assert calc.add(-1, 1) == 0
+
+
+
+def classify(num):
+    if num % 2 == 0:
+        return "even"
+    elif num % 3 == 0:
+        return "divisible by 3"
+    else:
+        return "other"
  
