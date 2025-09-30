@@ -224,3 +224,37 @@ Assert the final balance matches a manually calculated value.
 Test that a zero interest rate means the balance never grows.
  
 Test that a negative interest rate reduces the balance over time (like a penalty).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       .Azure Virtual Network (VNet)
+The foundation of Azure networking.
+Similar to an on-premises network but in the cloud.
+Lets you securely connect Azure resources (VMs, databases, apps).
+Features:
+Isolation: Each VNet is logically isolated.
+Subnets: Divide VNet into smaller networks.
+Private IPs for internal communication.
+Peering → connect VNets across regions.
+Integration with on-premises via VPN or ExpressRoute
