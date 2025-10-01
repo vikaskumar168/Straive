@@ -46,3 +46,19 @@ Create multiple account objects and store them in a list or dictionary. Write co
 Extend the project so that every account has a unique account number generator.
 Implement a Base class Employee (for bank staff) and a Manager class that can approve loans for customers.
 How would you make this system scalable if thousands of users were using it? (Hint: think about data storage & design).
+
+
+
+
+
+
+
+
+
+
+MVC Architecture Overview-Core Concepts of MVC (Model, View, Controller), Advantages
+Implementing MVC in Web Frameworks, MVC Best Practices
+Rest API Development - Flask, FastAPI, API Security (Authentication and Authorization), API Testing and Documentation
+Pandas  - Advanced. DuckGo Training (alternate to pandas), Data Manipulation with Pandas
+Advanced Data Analysis Techniques, Performance Optimization in Pandas
+NoSql Overview- Types of NoSQL Databases (Document, Key-Value, Column-Family, Graph), Core Concepts and Use Cases, Comparison with SQL Databases, Introduction to Popular NoSQL Databases (e.g., MongoDB, Cassandra, Redis)
