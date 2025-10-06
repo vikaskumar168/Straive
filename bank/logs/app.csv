@@ -1,0 +1,80 @@
+Timestamp,Level,Message
+2025-10-06 15:14:02,INFO,Accounts table created or already exists.
+2025-10-06 15:14:02,INFO,Starting Flask application...
+2025-10-06 15:14:02,INFO,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-10-06 15:14:02,INFO,[33mPress CTRL+C to quit[0m
+2025-10-06 15:14:02,INFO, * Restarting with stat
+2025-10-06 15:14:02,INFO,Accounts table created or already exists.
+2025-10-06 15:14:02,INFO,Starting Flask application...
+2025-10-06 15:14:02,WARNING, * Debugger is active!
+2025-10-06 15:14:02,INFO, * Debugger PIN: 114-618-745
+2025-10-06 15:14:50,INFO,"Received account creation request: {'name': 'Ritesh', 'email': 'ritesh@gmail.com', 'balance': 1123334, 'account_type': 'savings', 'adhaar_number': '6787901234567', 'password': 'ritesh@123'}"
+2025-10-06 15:14:50,INFO,Next account number generated: 1011
+2025-10-06 15:14:50,INFO,Account 1011 saved successfully.
+2025-10-06 15:14:50,INFO,Account created successfully: 1011
+2025-10-06 15:14:50,INFO,"127.0.0.1 - - [06/Oct/2025 15:14:50] ""[35m[1mPOST /add_account HTTP/1.1[0m"" 201 -"
+2025-10-06 15:16:55,INFO,"Login attempt for name=Ritesh, adhaar=6787901234567"
+2025-10-06 15:16:55,INFO,Login successful for account 1011
+2025-10-06 15:16:55,INFO,"127.0.0.1 - - [06/Oct/2025 15:16:55] ""POST /login HTTP/1.1"" 200 -"
+2025-10-06 15:17:07,INFO,Fetching account details for JWT identity: 1011
+2025-10-06 15:17:07,INFO,Account 1011 fetched successfully.
+2025-10-06 15:17:07,INFO,"127.0.0.1 - - [06/Oct/2025 15:17:07] ""GET /my_account HTTP/1.1"" 200 -"
+2025-10-06 15:17:16,INFO,Fetching all accounts
+2025-10-06 15:17:16,INFO,Fetched 6 accounts from database.
+2025-10-06 15:17:16,INFO,Fetched 6 accounts
+2025-10-06 15:17:16,INFO,"127.0.0.1 - - [06/Oct/2025 15:17:16] ""GET /accounts HTTP/1.1"" 200 -"
+2025-10-06 15:17:26,INFO,Calculating interest for account: 1011
+2025-10-06 15:17:26,INFO,Account 1011 fetched successfully.
+2025-10-06 15:17:26,INFO,"Calculating interest: balance=1123334.0, account_type=savings"
+2025-10-06 15:17:26,INFO,Interest for savings account: 44933.36
+2025-10-06 15:17:26,INFO,Interest calculated for account 1011: 44933.36
+2025-10-06 15:17:26,INFO,"127.0.0.1 - - [06/Oct/2025 15:17:26] ""GET /calculate_interest HTTP/1.1"" 200 -"
+2025-10-06 15:17:42,INFO,Loan request for account 1011
+2025-10-06 15:17:42,INFO,"Params: loan_type=business, tan_number=None, pancard_number=ABCDE3344J"
+2025-10-06 15:17:42,INFO,Account 1011 fetched successfully.
+2025-10-06 15:17:42,WARNING,Invalid loan type for savings account: business
+2025-10-06 15:17:42,INFO,"127.0.0.1 - - [06/Oct/2025 15:17:42] ""[31m[1mGET /loan?pancard_number=ABCDE3344J&loan_type=business HTTP/1.1[0m"" 400 -"
+2025-10-06 15:17:48,INFO,Loan request for account 1011
+2025-10-06 15:17:48,INFO,"Params: loan_type=home, tan_number=None, pancard_number=ABCDE3344J"
+2025-10-06 15:17:48,INFO,Account 1011 fetched successfully.
+2025-10-06 15:17:48,INFO,"Calculating loan: balance=1123334.0, account_type=savings, loan_type=home"
+2025-10-06 15:17:48,INFO,Loan approved for savings account: 898667.2
+2025-10-06 15:17:48,INFO,Loan approved for account 1011: 898667.2
+2025-10-06 15:17:48,INFO,"127.0.0.1 - - [06/Oct/2025 15:17:48] ""GET /loan?pancard_number=ABCDE3344J&loan_type=home HTTP/1.1"" 200 -"
+2025-10-06 15:17:54,INFO,Loan request for account 1011
+2025-10-06 15:17:54,INFO,"Params: loan_type=home, tan_number=None, pancard_number=None"
+2025-10-06 15:17:54,INFO,Account 1011 fetched successfully.
+2025-10-06 15:17:54,WARNING,Missing PAN card number
+2025-10-06 15:17:54,INFO,"127.0.0.1 - - [06/Oct/2025 15:17:54] ""[31m[1mGET /loan?loan_type=home HTTP/1.1[0m"" 400 -"
+2025-10-06 15:17:57,INFO,Loan request for account 1011
+2025-10-06 15:17:57,INFO,"Params: loan_type=home, tan_number=None, pancard_number=ABCDE3344J"
+2025-10-06 15:17:57,INFO,Account 1011 fetched successfully.
+2025-10-06 15:17:57,INFO,"Calculating loan: balance=1123334.0, account_type=savings, loan_type=home"
+2025-10-06 15:17:57,INFO,Loan approved for savings account: 898667.2
+2025-10-06 15:17:57,INFO,Loan approved for account 1011: 898667.2
+2025-10-06 15:17:57,INFO,"127.0.0.1 - - [06/Oct/2025 15:17:57] ""GET /loan?pancard_number=ABCDE3344J&loan_type=home HTTP/1.1"" 200 -"
+2025-10-06 15:18:02,INFO,"Transaction request: {'amount': 23000.0, 'is_deposit': True}"
+2025-10-06 15:18:02,INFO,Account 1010 fetched successfully.
+2025-10-06 15:18:02,INFO,"Attempting deposit: balance=112334.0, amount=23000.0"
+2025-10-06 15:18:02,INFO,Deposit successful: new_balance=135334.0
+2025-10-06 15:18:02,INFO,"127.0.0.1 - - [06/Oct/2025 15:18:02] ""PUT /transaction HTTP/1.1"" 200 -"
+2025-10-06 15:18:09,INFO,"127.0.0.1 - - [06/Oct/2025 15:18:09] ""[31m[1mPUT /transaction HTTP/1.1[0m"" 401 -"
+2025-10-06 15:18:10,INFO,"127.0.0.1 - - [06/Oct/2025 15:18:10] ""[31m[1mPUT /transaction HTTP/1.1[0m"" 401 -"
+2025-10-06 15:18:16,INFO,"Login attempt for name=Ritesh, adhaar=6787901234567"
+2025-10-06 15:18:16,INFO,Login successful for account 1011
+2025-10-06 15:18:16,INFO,"127.0.0.1 - - [06/Oct/2025 15:18:16] ""POST /login HTTP/1.1"" 200 -"
+2025-10-06 15:18:33,INFO,"Transaction request: {'amount': 23000.0, 'is_deposit': False}"
+2025-10-06 15:18:33,INFO,Account 1011 fetched successfully.
+2025-10-06 15:18:33,INFO,"Attempting withdrawal: balance=1123334.0, amount=23000.0"
+2025-10-06 15:18:33,INFO,Withdrawal successful: new_balance=1100334.0
+2025-10-06 15:18:33,INFO,"127.0.0.1 - - [06/Oct/2025 15:18:33] ""PUT /transaction HTTP/1.1"" 200 -"
+2025-10-06 15:18:38,INFO,"Transaction request: {'amount': 23000.0, 'is_deposit': False}"
+2025-10-06 15:18:38,INFO,Account 1011 fetched successfully.
+2025-10-06 15:18:38,INFO,"Attempting withdrawal: balance=1100334.0, amount=23000.0"
+2025-10-06 15:18:38,INFO,Withdrawal successful: new_balance=1077334.0
+2025-10-06 15:18:38,INFO,"127.0.0.1 - - [06/Oct/2025 15:18:38] ""PUT /transaction HTTP/1.1"" 200 -"
+2025-10-06 15:18:43,INFO,"Transaction request: {'amount': 23000.0, 'is_deposit': True}"
+2025-10-06 15:18:43,INFO,Account 1011 fetched successfully.
+2025-10-06 15:18:43,INFO,"Attempting deposit: balance=1077334.0, amount=23000.0"
+2025-10-06 15:18:43,INFO,Deposit successful: new_balance=1100334.0
+2025-10-06 15:18:43,INFO,"127.0.0.1 - - [06/Oct/2025 15:18:43] ""PUT /transaction HTTP/1.1"" 200 -"
