@@ -7,4 +7,9 @@ System Roles (Actors) • Account Holder • System Suggested Classes   • Savi
 jwt -> in existing application 
  
 store all the logs in logger file , convert logger file in csv and do the anaylsis
+
+https://github.com/tporadowski/redis/releases
+Releases · tporadowski/redis
+Native port of Redis for Windows. Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Se...
+ 
  
