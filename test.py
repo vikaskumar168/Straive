@@ -455,4 +455,17 @@ Enter first number  <input type=text id=t1>
    
     </body>
 </html>
- 
+
+
+
+
+
+
+
+
+
+
+
+
+https://cdnjs.com/libraries/semantic-ui
+                               <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
