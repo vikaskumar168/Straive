@@ -435,4 +435,24 @@ def visit_counter():
 # ----------------------------
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+         <!DOCTYPE html>
+<html>
+<head>
+<script type=text/javascript src="add.js"></script>
+ 
+    </head>    
+   
+    <body>
+ 
+Enter first number  <input type=text id=t1>
+        <br>
+ Enter second  number  <input type=text id=t2>      
+<p id=p1></p>
+<input type="button" id=b1 value="addition" onclick="addition()">
+   
+    </body>
+</html>
  
