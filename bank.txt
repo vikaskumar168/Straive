@@ -22,5 +22,8 @@ Native port of Redis for Windows. Redis is an in-memory database that persists o
 
 
 ZAP's Value Proposition: OWASP ZAP is the essential, free DAST tool that uses a Man-in-the-Middle Proxy to automatically find critical vulnerabilities (like SQLi, XSS, and SSRF) in running web applications. Core Remediation Strategy: Fixing these vulnerabilities depends on universal security principles: Never trusting user input (validate/encode data) and strictly enforcing "Deny by Default" for access controls. Security Integration: The most impactful use of ZAP is its integration into CI/CD pipelines, enabling the "Shift Left" approach to ensure security is continuously verified throughout the development lifecycle.
- 
+
+
+
+https://www.canva.com/design/DAG1XqirooU/7bGx7P-iKNrbWqpyECz0zA/edit
  
