@@ -11,5 +11,16 @@ store all the logs in logger file , convert logger file in csv and do the anayls
 https://github.com/tporadowski/redis/releases
 Releases · tporadowski/redis
 Native port of Redis for Windows. Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Se...
+
+
+
+
+
+
+
+
+
+
+ZAP's Value Proposition: OWASP ZAP is the essential, free DAST tool that uses a Man-in-the-Middle Proxy to automatically find critical vulnerabilities (like SQLi, XSS, and SSRF) in running web applications. Core Remediation Strategy: Fixing these vulnerabilities depends on universal security principles: Never trusting user input (validate/encode data) and strictly enforcing "Deny by Default" for access controls. Security Integration: The most impactful use of ZAP is its integration into CI/CD pipelines, enabling the "Shift Left" approach to ensure security is continuously verified throughout the development lifecycle.
  
  
