@@ -26,4 +26,43 @@ ZAP's Value Proposition: OWASP ZAP is the essential, free DAST tool that uses a 
 
 
 https://www.canva.com/design/DAG1XqirooU/7bGx7P-iKNrbWqpyECz0zA/edit
+
+
+
+
+
+
+
+
+
+
+
+class Calculator {
+  add(a: number, b: number): number {
+    return a + b;
+  }
+ 
+  subtract(a: number, b: number): number {
+    return a - b;
+  }
+ 
+  multiply(a: number, b: number): number {
+    return a * b;
+  }
+ 
+  divide(a: number, b: number): number {
+    if (b === 0) {
+      throw new Error("Division by zero is not allowed");
+    }
+    return a / b;
+  }
+}
+ 
+// Example usage:
+const calc = new Calculator();
+ 
+console.log("Addition: ", calc.add(10, 5));         // 15
+console.log("Subtraction: ", calc.subtract(10, 5)); // 5
+console.log("Multiplication: ", calc.multiply(10, 5)); // 50
+console.log("Division: ", calc.divide(10, 5));
  
